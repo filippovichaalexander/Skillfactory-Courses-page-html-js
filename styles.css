@@ -835,11 +835,12 @@ input[type="submit"] {
   align-items: center;
   justify-content: flex-start;
 }
+.course__description-middle {
+  column-gap: 66px; 
+  row-gap: 20px;
+}
 .course--description-item {
   margin-top: 40px;
-}
-.course__description-middle-item:not(:nth-child(3)) {
-  margin-right: 66px;
 }
 .course__description-middle-title {
   font-family: "Inter";
@@ -3306,6 +3307,7 @@ select {
   
   /* Courses */
   
+  
   .breadcrumb {
     /* margin-top: 40px; */
     font-size: 12px;
@@ -3317,8 +3319,15 @@ select {
   .course__description-bottom--item {
     margin-right: 5px;
   }
+  .course__description-middle {
+    column-gap: 24px;
+    flex-wrap: wrap;
+  }
+  .course__description-bottom {
+    flex-wrap: wrap;
+  }
   .course__description-middle-item-last {
-    margin-right: 0;
+    min-width: 245px;
   }
   .courses-tabs {
     margin-top: 60px;
